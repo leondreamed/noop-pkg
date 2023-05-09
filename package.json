@@ -1,0 +1,15 @@
+{
+	"name": "noop-pkg",
+	"version": "1.0.0",
+	"main": "./noop.js",
+	"exports": {
+		".": {
+			"import": "./noop.mjs",
+			"default": "./noop.js"
+		},
+		"./*": {
+			"import": "./noop.mjs",
+			"default": "./noop.js"
+		}
+	}
+}
